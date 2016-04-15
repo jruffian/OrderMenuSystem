@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.idv.crystalfish.ordermenusystem.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CrystalFish Love Toast"
+        android:textSize="20dp"
+        android:id="@+id/sologn_TV"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:id="@+id/order_IV"
+        android:layout_below="@+id/sologn_TV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/order"
+        android:layout_marginLeft="50dp" />
+
+    <ImageView
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:id="@+id/staff_IV"
+        android:layout_below="@+id/sologn_TV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/order_IV"
+        android:src = "@drawable/staff"
+        android:layout_marginRight="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Order"
+        android:id="@+id/order_TV"
+        android:layout_below="@+id/order_IV"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignLeft="@+id/order_IV"
+        android:layout_alignParentBottom="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Staff"
+        android:id="@+id/staff_TV"
+        android:layout_below="@+id/staff_IV"
+        android:layout_alignLeft="@+id/staff_IV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignTop="@+id/order_TV" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/menu_IV"
+        android:layout_below="@+id/order_TV"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:src="@drawable/menu"
+        android:layout_alignLeft="@+id/order_IV"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/record_IV"
+        android:layout_below="@+id/staff_TV"
+        android:src="@drawable/record"
+        android:layout_alignLeft="@+id/staff_IV"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Menu"
+        android:id="@+id/menu_TV"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/menu_IV"
+        android:layout_alignLeft="@+id/menu_IV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Record"
+        android:id="@+id/record_TV"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/record_IV"
+        android:layout_alignLeft="@+id/record_IV" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/account_IV"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/menu_TV"
+        android:layout_alignLeft="@+id/menu_IV"
+        android:src="@drawable/account"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/analysis_IV"
+        android:layout_below="@+id/record_TV"
+        android:layout_alignLeft="@+id/record_IV"
+        android:src="@drawable/analysis"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Account"
+        android:id="@+id/account_TV"
+        android:layout_below="@+id/account_IV"
+        android:layout_alignLeft="@+id/account_IV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Analysis"
+        android:id="@+id/Analysis_TV"
+        android:layout_below="@+id/analysis_IV"
+        android:layout_alignLeft="@+id/record_IV" />
+</RelativeLayout>
